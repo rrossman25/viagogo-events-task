@@ -7,7 +7,7 @@ export const part1 = () => {
         <h1>Elton John Events</h1>
         <div className="events">
           {eltonEvents.Items.map(event => (
-            <div className = "event">
+            <div key = {event.Date} className = "event">
                 <h3>{event.Day} {event.Date}</h3>
                 <h4>{event.VenueName} {event.VenueCity} {event.VenueCountry}</h4>
                 <p>{event.VenueDescription}</p>
